@@ -1,3 +1,3 @@
 # Password Generator
 
-Live-demo -> 
+Live-demo -> https://passwordgenerator-huey.netlify.app/
