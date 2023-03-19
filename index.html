@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Password Generator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Generate a <span class="random">random password</span></h1>
+            <p>Never use an insecure password again</p>
+            <div class="generate">
+                <div>
+                    <p>Uppercase<input type="checkbox" id="upperCh"></p>
+                    <p>Lowercase<input type="checkbox" id="lowerCh"></p>
+                    <p>Numbers<input type="checkbox" id="numbersCh"></p>
+                    <p>Symbols<input type="checkbox" id="symbolsCh"></p>
+                </div>
+                <div>
+                    <button onclick="generatePw()">Generate Passwords</button>
+                </div>
+            </div>
+            <div class="passwords">
+                <div>
+                    <p class="firstPw"></p>
+                </div>
+                <div>
+                    <p class="secondPw"></p>
+                </div>
+            </div>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>

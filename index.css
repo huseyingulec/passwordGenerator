@@ -1,0 +1,61 @@
+body {
+    background-image: url("mountains.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.container {
+    background-color: #036d68d8;
+    margin: 80px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    max-width: 45%;
+    padding: 20px;
+
+}
+
+.random {
+    color: #06c050;
+}
+
+.generate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+button {
+    color: #000000;
+    margin: 50px;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 25px;
+    background-color: #02c412b6;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+
+.passwords {
+    display: flex;
+    justify-content: center;
+}
+
+
+.firstPw, .secondPw {
+    background-color: #02c412b6;
+    margin: 20px 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+}
