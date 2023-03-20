@@ -64,9 +64,6 @@ function handleClick() {
     alert("Password copied to clipboard!");
 }
 
-firstPw.addEventListener("click", handleClick);
-secondPw.addEventListener("click", handleClick);
-
 function getCharacters() {
     let characters = [];
     if (upperCh.checked) {

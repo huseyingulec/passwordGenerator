@@ -7,3 +7,4 @@ each password should be 15 characters long
 ability to set password length
 add copy-on-click
 toggle symbols and numbers on/off
+
