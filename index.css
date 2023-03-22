@@ -2,20 +2,18 @@ body {
     background-image: url("mountains.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    
 }
 .container {
     background-color: #036d68d8;
     margin: 50px auto;
     border: 2px solid black;
     border-radius: 20px;
-    max-width: 45%;
+    max-width: 600px;
     padding: 20px;
 
 }
@@ -64,4 +62,17 @@ button:hover {
     border-radius: 20px;
     padding: 20px;
     width: 200px;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 480px) {
+    .generate,
+    .passwords {
+        flex-direction: column;
+    }
+}
+
+.checkbox-list li {
+    display: flex;
+    gap: 10px;
 }

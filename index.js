@@ -51,12 +51,20 @@ function generatePw() {
     secondPw.removeEventListener("click", handleClick);
 
     let characters = getCharacters()
+    if (characters.length < 1) { // if there are no checked characters execute an alert
+        alert("Please select at least one character type!");
+        return  // return out and don't generate any password, don't execute any line of codes below this
+    } 
+    
     firstPw.textContent = randomPassword()
     secondPw.textContent = randomPassword()
 
     // to prevent multiple alerts, created a new function to give an alert outside of our function, because we have 2 outputs so when we click inside this function, it creates multiple alerts at a time.
     firstPw.addEventListener("click", handleClick) 
     secondPw.addEventListener("click", handleClick)
+    
+
+
 }
 
 function handleClick() {
@@ -74,10 +82,7 @@ function getCharacters() {
         characters = characters.concat(numbers)
     } if (symbolsCh.checked)
     {characters = characters.concat(specials)
-    } if (characters.length === 0) {
-        alert("Please select at least one character type!");
     }
-
     return characters
 }
 

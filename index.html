@@ -9,12 +9,12 @@
             <h1>Generate a <span class="random">random password</span></h1>
             <p>Never use an insecure password again</p>
             <div class="generate">
-                <div>
-                    <p>Uppercase<input type="checkbox" id="upperCh"></p>
-                    <p>Lowercase<input type="checkbox" id="lowerCh"></p>
-                    <p>Numbers<input type="checkbox" id="numbersCh"></p>
-                    <p>Symbols<input type="checkbox" id="symbolsCh"></p>
-                </div>
+                <ul class="checkbox-list">
+                    <li>Uppercase<input type="checkbox" id="upperCh"></li>
+                    <li>Lowercase<input type="checkbox" id="lowerCh"></li>
+                    <li>Numbers<input type="checkbox" id="numbersCh"></li>
+                    <li>Symbols<input type="checkbox" id="symbolsCh"></li>
+                </ul>
                 <div>
                     <button onclick="generatePw()">Generate Passwords</button>
                 </div>
@@ -22,12 +22,8 @@
             <input id="pw-input" type="range" min="4" max="24" step="1" value="15"/>
             <p>Pw length: <output id="value"></output></p>  
             <div class="passwords">
-                <div>
-                    <p class="first-pw"></p>
-                </div>
-                <div>
-                    <p class="second-pw"></p>
-                </div>
+                <p class="first-pw"></p>
+                <p class="second-pw"></p>
             </div>
             <p>Click for copy passwords</p>
             <script src="index.js"></script>
