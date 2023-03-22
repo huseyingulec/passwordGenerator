@@ -75,4 +75,10 @@ button:hover {
 .checkbox-list li {
     display: flex;
     gap: 10px;
+    width: 175px;
+    
+}
+
+li {
+    padding-top: 15px;
 }
